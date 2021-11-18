@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "dk.au.mad21fall.group6.drunksaroundme"
-        minSdk 17
+        minSdk 19
         targetSdk 31
         versionCode 1
         versionName "1.0"
