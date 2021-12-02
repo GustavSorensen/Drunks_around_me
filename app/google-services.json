@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576608997801",
+    "project_id": "drunks-around-me",
+    "storage_bucket": "drunks-around-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576608997801:android:e45aa5c28ddcac32e774b8",
+        "android_client_info": {
+          "package_name": "dk.au.mad21fall.group6.drunksaroundme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576608997801-1qeg5hhssa5j1jglod5v62te5nhejnh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_TSDPqI7htbAomPLFxnuQpD0yW8D8xU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576608997801-1qeg5hhssa5j1jglod5v62te5nhejnh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
