@@ -23,7 +23,8 @@
         android:layout_marginStart="159dp"
         android:layout_marginEnd="154dp"
         android:text="Log Out"
+        app:layout_constraintBottom_toTopOf="@+id/txtvHello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

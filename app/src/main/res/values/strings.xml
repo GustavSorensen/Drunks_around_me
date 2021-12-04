@@ -9,4 +9,19 @@
     <string name="txtRepeatPassword">Repeat password</string>
     <string name="btnCreateUser">Create user</string>
     <string name="btnBack">Back</string>
+    <string name="txtHostParty">Host party</string>
+    <string name="txtPartyName">Party name</string>
+    <string name="txtPartyDescription">Description </string>
+    <string name="txtCancel">Cancel</string>
+    <string name="btnHostParty">Host party</string>
+    <string name="btnBeer">Beer</string>
+    <string name="btnShot">Shot</string>
+    <string name="btnDrink">Drink</string>
+    <string name="txtChooseBeverage">Choose beverage</string>
+    <string name="btnAddDrink">Add drink</string>
+    <string name="btnStartTest">Start Test</string>
+    <string name="txtPerMill">Per mille:</string>
+    <string name="txtParty">Party</string>
+    <string name="btnLeave">Leave</string>
+    <string name="txtSendAnswer">Send Answer</string>
 </resources>
