@@ -1,11 +1,18 @@
 package dk.au.mad21fall.group6.drunksaroundme.Views;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Telephony;
+import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
@@ -21,7 +28,7 @@ public class PartyRoomActivity extends AppCompatActivity implements PartyRoomAda
     private RecyclerView rcv;
     private PartyRoomAdapter adapter;
 
-    //Skal få personer fra ViewModel
+    //TODO: Skal få personer fra ViewModel
     private ArrayList<Person> persons;
 
     @Override
@@ -29,18 +36,41 @@ public class PartyRoomActivity extends AppCompatActivity implements PartyRoomAda
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_party_room);
 
-        rcv = findViewById(R.id.rcvPartyList);
+        setupUI();
 
+        rcv = findViewById(R.id.rcvPartyList);
         rcv.setLayoutManager(new LinearLayoutManager(this));
         adapter = new PartyRoomAdapter(this);
         rcv.setAdapter(adapter);
 
-        //Skal være en observe på ViewModel
+        //TODO: Skal være en observe på ViewModel
         createData();
         adapter.updatePersonList(persons);
 
+        btnLeaveParty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO: Lav kald til repo, hvor man forlader party
+                finish();
+            }
+        });
+
+        btnAddDrink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(PartyRoomActivity.this, BeverageActivity.class);
+                launcher.launch(i);
+            }
+        });
+
     }
 
+    private void setupUI() {
+        btnAddDrink = findViewById(R.id.btnPartyAddDrink);
+        btnLeaveParty = findViewById(R.id.btnPartyLeaveRoom);
+    }
+
+    //Dummy data created så RCV ikke crasher uden ViewModels
     private void createData(){
         persons = new ArrayList<Person>();
         persons.add(new Person("Ermin","Male", 69));
@@ -63,4 +93,17 @@ public class PartyRoomActivity extends AppCompatActivity implements PartyRoomAda
     public void onPersonClicked(int index) {
 
     }
+
+    //Activity launcer. Taken from what was posted in Discord and changed a little
+    ActivityResultLauncher<Intent> launcher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),   //default contract
+            new ActivityResultCallback<ActivityResult>() {          //our callback
+                @Override
+                public void onActivityResult(ActivityResult result) {   //result contains result code and data
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        //Intent data = result.getData();
+
+                    }
+                }
+            });
 }
