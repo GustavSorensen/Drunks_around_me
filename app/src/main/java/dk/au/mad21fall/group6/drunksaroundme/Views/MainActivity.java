@@ -1,4 +1,4 @@
-package dk.au.mad21fall.group6.drunksaroundme;
+package dk.au.mad21fall.group6.drunksaroundme.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import dk.au.mad21fall.group6.drunksaroundme.R;
 
 public class MainActivity extends AppCompatActivity {
 

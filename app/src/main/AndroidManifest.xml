@@ -13,28 +13,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DrunksAroundMe">
         <activity
-            android:name=".HighScoreActivity"
+            android:name=".Views.HighScoreActivity"
             android:exported="true" />
         <activity
-            android:name=".TestActivity"
+            android:name=".Views.TestActivity"
             android:exported="true" />
         <activity
-            android:name=".PartyRoomActivity"
+            android:name=".Views.PartyRoomActivity"
             android:exported="true" />
         <activity
-            android:name=".BeverageActivity"
+            android:name=".Views.BeverageActivity"
             android:exported="true" />
         <activity
-            android:name=".HostActivity"
+            android:name=".Views.HostActivity"
             android:exported="true" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".Views.SignupActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Views.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Views.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

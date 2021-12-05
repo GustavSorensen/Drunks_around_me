@@ -1,8 +1,10 @@
-package dk.au.mad21fall.group6.drunksaroundme;
+package dk.au.mad21fall.group6.drunksaroundme.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import dk.au.mad21fall.group6.drunksaroundme.R;
 
 public class TestActivity extends AppCompatActivity {
 

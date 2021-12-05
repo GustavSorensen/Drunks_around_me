@@ -1,4 +1,4 @@
-package dk.au.mad21fall.group6.drunksaroundme;
+package dk.au.mad21fall.group6.drunksaroundme.Views;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -18,20 +18,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.firebase.ui.auth.AuthUI;
-import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract;
-import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult;
-import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.firebase.ui.auth.IdpResponse;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.List;
+import dk.au.mad21fall.group6.drunksaroundme.R;
 
 public class LoginActivity extends AppCompatActivity {
 
