@@ -1,8 +1,8 @@
-package dk.au.mad21fall.group6.drunksaroundme;
-
-import androidx.fragment.app.FragmentActivity;
+package dk.au.mad21fall.group6.drunksaroundme.Views;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -11,6 +11,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import dk.au.mad21fall.group6.drunksaroundme.R;
 import dk.au.mad21fall.group6.drunksaroundme.ViewModels.MapsActivityViewModel;
 import dk.au.mad21fall.group6.drunksaroundme.databinding.ActivityMapsBinding;
 
