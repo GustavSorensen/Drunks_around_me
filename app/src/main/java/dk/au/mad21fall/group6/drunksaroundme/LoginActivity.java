@@ -123,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void goToMap() {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, MapsActivity.class);
 
         Log.d("Gustav", "goToMap: "+ auth.getCurrentUser().getEmail());
         launcher.launch(i);
