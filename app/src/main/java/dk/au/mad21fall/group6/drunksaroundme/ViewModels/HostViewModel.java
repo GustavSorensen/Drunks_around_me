@@ -7,10 +7,10 @@ import androidx.lifecycle.AndroidViewModel;
 
 import dk.au.mad21fall.group6.drunksaroundme.Repository.Repository;
 
-public class PartyRoomViewModel extends AndroidViewModel {
+public class HostViewModel extends AndroidViewModel {
     private Repository repository;
 
-    public PartyRoomViewModel(@NonNull Application application) {
+    public HostViewModel(@NonNull Application application) {
         super(application);
         repository = Repository.getInstance(application);
     }
